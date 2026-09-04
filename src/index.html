@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aniket Bhattacharjee - Portfolio">
+    <title>Aniket Bhattacharjee</title>
+    <!-- Prevent theme flash -->
+    <script>
+        (function() {
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const theme = savedTheme || (prefersDark ? 'dark' : 'light');
+            document.documentElement.setAttribute('data-theme', theme);
+        })();
+    </script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/jpeg" href="./assests/pf.jpg">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="#" class="nav-brand">Aniket Bhattacharjee</a>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <!-- <li><a href="#projects">Projects</a></li> -->
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">
+                <!-- Sun Icon for Dark Mode (click to switch to light) -->
+                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                <!-- Moon Icon for Light Mode (click to switch to dark) -->
+                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <div class="hero-greeting">Hi there! 👋</div>
+                <h1 class="hero-name">Aniket Bhattacharjee</h1>
+                <p class="hero-title">AI/ML Engineer | Data Scientist</p>
+                <p class="hero-bio">
+                    I'm a passionate data scientist with strong foundations in ML, AI.
+                    Always excited about solving complex problems and exploring emerging technologies.
+                </p>
+                <div class="hero-links">
+                    <a href="mailto:aniketcodes101@zohomail.in" class="link-btn link-btn-primary">
+                        <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                        </svg>
+                        Email
+                    </a>
+                    <a href="https://github.com/aniketcodes101" target="_blank" rel="noopener noreferrer" class="link-btn">
+                        <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                        GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/aniketcodes101/" target="_blank" rel="noopener noreferrer" class="link-btn">
+                        <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                        LinkedIn
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="./assests/pf.jpg" alt="Aniket Bhattacharjee" class="headshot">
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section">
+            <h2 class="section-title">Education</h2>
+            <div class="education-grid">
+                <article class="education-card">
+                    <div class="education-header">
+                        <div class="education-icon-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                            </svg>
+                        </div>
+                        <div class="education-details">
+                            <h3 class="education-degree">BS in Data Science and Applications</h3>
+                            <p class="education-institution">Indian Institute of Technology Madras            (2026 - 2030) </p>
+                        </div>
+                    </div>
+                    <div class="education-body">
+                        <span class="coursework-label">Required Coursework:</span>
+                        <div class="education-coursework">
+                            
+                            <div class="coursework-tags">
+                                <span class="tag">Mathematics & Statistics for Data Science</span>
+                                <span class="tag">Python</span>
+                                <span class="tag">Database Management Systems (DBMS)</span>
+                                <span class="tag">Machine Learning</span>
+                                <span class="tag">Deep Learning & AI Search Methods</span>
+                                <span class="tag">Operating Systems & Computer Architecture</span>
+                                <span class="tag">Software Engineering & Business Analytics</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <div class="category-icon">💻</div>
+                        <h3 class="skill-category-title">Programming Languages</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">TypeScript</span>
+                        <span class="tag">SQL</span>
+                        <span class="tag">HTML5 / CSS3</span>
+                        <span class="tag">Java (Basic)</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <div class="category-icon">⚡</div>
+                        <h3 class="skill-category-title">Frameworks & Libraries</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="tag">Numpy</span>
+                        <span class="tag">Pandas</span>
+                        <span class="tag">Matplotlib</span>
+                        <span class="tag">Pytorch</span>
+                        <span class="tag">FastAPI</span>
+                        <span class="tag">Langchain & Langraph</span>
+                        <span class="tag">Pydantic</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <div class="category-icon">🛠️</div>
+                        <h3 class="skill-category-title">Tools & Cloud</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="tag">Git & GitHub</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">Linux</span>
+                        <span class="tag">Postman</span>
+                        <span class="tag">VS Code</span>
+                        <span class="tag">Vercel</span>
+                        <span class="tag">CI/CD Basics</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <div class="category-icon">🧠</div>
+                        <h3 class="skill-category-title">Databases & Core Concepts</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">MongoDB</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">RESTful APIs</span>
+                        <span class="tag">Data Structures & Algorithms</span>
+                        <span class="tag">Machine Learning & Data Science</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================================================== -->
+        <!-- PROJECTS SECTION (Currently commented out)   -->
+        <!-- ======================================================== -->
+        <!--
+        <section id="projects" class="section">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <h3 class="project-title">Project Name One</h3>
+                    <p class="project-description">A high-performance full-stack web application built with modern architecture and scalable design.</p>
+                    <div class="project-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">PostgreSQL</span>
+                    </div>
+                    <a href="https://github.com/aniketcodes101" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub →</a>
+                </article>
+
+                <article class="project-card">
+                    <h3 class="project-title">Project Name Two</h3>
+                    <p class="project-description">An intelligent data processing and analytics tool with automated workflows and insightful visualizations.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">FastAPI</span>
+                        <span class="tag">Docker</span>
+                    </div>
+                    <a href="https://github.com/aniketcodes101" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub →</a>
+                </article>
+
+                <article class="project-card">
+                    <h3 class="project-title">Project Name Three</h3>
+                    <p class="project-description">A modern cloud-native system featuring microservices communication, real-time messaging, and high availability.</p>
+                    <div class="project-tags">
+                        <span class="tag">TypeScript</span>
+                        <span class="tag">Redis</span>
+                        <span class="tag">AWS</span>
+                    </div>
+                    <a href="https://github.com/aniketcodes101" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub →</a>
+                </article>
+            </div>
+        </section>
+    -->
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="contact-header-wrap">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="contact-subtitle">
+                    Feel free to reach out for collaborations, questions, or opportunities!
+                </p>
+            </div>
+
+            <div class="contact-icons-row">
+                <a href="mailto:aniketcodes101@zohomail.in" class="contact-icon-btn" aria-label="Email" title="Email">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                    </svg>
+                </a>
+
+                <a href="https://github.com/aniketcodes101" target="_blank" rel="noopener noreferrer" class="contact-icon-btn" aria-label="GitHub" title="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                </a>
+
+                <a href="https://www.linkedin.com/in/aniketcodes101/" target="_blank" rel="noopener noreferrer" class="contact-icon-btn" aria-label="LinkedIn" title="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    </svg>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Aniket Bhattacharjee.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
