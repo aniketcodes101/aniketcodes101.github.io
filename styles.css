@@ -9,7 +9,7 @@
     --accent-hover: #1d4ed8;
     --accent-light: rgba(37, 99, 235, 0.08);
     --border-color: #e2e8f0;
-    --card-bg: #ffffff;
+    --card-bg: #F7F3EA;
     --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
     --card-shadow-hover: 0 12px 24px -4px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.04);
     --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -289,21 +289,21 @@ a:hover {
 .link-btn-primary {
     background-color: var(--accent);
     border-color: var(--accent);
-    color: #ffffff;
+    color: #F7F3EA;
 }
 
 .link-btn-primary .btn-icon {
-    color: #ffffff;
+    color: #F7F3EA;
 }
 
 .link-btn-primary:hover {
     background-color: var(--accent-hover);
     border-color: var(--accent-hover);
-    color: #ffffff;
+    color: #F7F3EA;
 }
 
 .link-btn-primary:hover .btn-icon {
-    color: #ffffff;
+    color: #F7F3EA;
 }
 
 .hero-image {
@@ -609,7 +609,7 @@ a:hover {
 .contact-icon-btn:hover {
     background-color: var(--accent);
     border-color: var(--accent);
-    color: #ffffff;
+    color: #F7F3EA;
     transform: translateY(-4px) scale(1.1);
     box-shadow: 0 10px 22px -3px rgba(37, 99, 235, 0.4);
     text-decoration: none;
@@ -752,7 +752,7 @@ a:hover {
 
 ::selection {
     background-color: var(--accent);
-    color: #ffffff;
+    color: #F7F3EA;
 }
 
 :focus-visible {
