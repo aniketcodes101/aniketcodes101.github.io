@@ -254,6 +254,7 @@ a:hover {
 .link-btn {
     gap: 0.5rem;
     padding-left: 1.15rem;
+    justify-content: center;
 
     width: 64px;
     height: 64px;
