@@ -252,23 +252,25 @@ a:hover {
 }
 
 .link-btn {
-    display: inline-flex;
-    align-items: center;
     gap: 0.5rem;
-    padding: 0.7rem 1.4rem;
+    padding-left: 1.15rem;
+
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
     background-color: var(--card-bg);
-    border: 1px solid var(--border-color);
-    border-radius: 10px;
-    font-size: 0.925rem;
-    font-weight: 500;
+    border: 1.5px solid var(--border-color);
     color: var(--text-primary);
+    display: flex;
+    align-items: center;
     box-shadow: var(--card-shadow);
-    transition: all 0.2s ease;
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    text-decoration: none;
 }
 
 .link-btn .btn-icon {
-    width: 16px;
-    height: 16px;
+    width: 24px;
+    height: 24px;
     color: var(--text-secondary);
     transition: color 0.2s ease;
 }
